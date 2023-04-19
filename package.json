@@ -1,0 +1,40 @@
+{
+  "name": "@valgeny/lotr-app",
+  "version": "0.0.2",
+  "description": "LOTR App",
+  "main": "dist/index",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/valgeny/lotr-app"
+  },
+  "scripts": {
+    "build": "npm run compile",
+    "compile": "tsc -p tsconfig.build.json",
+    "clean": "rm -rf ./dist",
+    "uninstall": "npm run clean && rm -rf node_modules/",
+    "start": "ts-node -T src/main",
+    "prepare": "husky install"
+  },
+  "author": "valgeny",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@types/node": "^18.11.18",
+    "@valgeny/lotr-sdk": "^0.0.31",
+    "http-status": "^1.6.2",
+    "typescript": "^4.9.4",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/uuid": "^9.0.0",
+    "eslint": "^8.32.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "husky": "^8.0.3",
+    "prettier": "^2.8.3",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0"
+  }
+}
